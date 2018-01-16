@@ -1,3 +1,5 @@
 module.exports = function getPositiveKeysOfBoolset(boolset) {
-  // your solution here
+  const array = boolset;
+  const odd  = array.filter((v, i) => i % 2)
+  return array.filter((v, i) => !(i % 2)).filter((item, i) => odd[i]);
 }
